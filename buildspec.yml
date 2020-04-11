@@ -5,6 +5,8 @@ phases:
     commands:
       - ls -la
       - ./gradlew assembleDebug
+      - ls -la
+       - ls -la app
 artifacts:
   files:
     - /**/*.apk
