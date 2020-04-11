@@ -9,4 +9,4 @@ phases:
       - ls -la app/build/outputs/apk/debug
 artifacts:
   files:
-    - /**/*.apk
+    - app/build/outputs/apk/debug/app-debug.apk
