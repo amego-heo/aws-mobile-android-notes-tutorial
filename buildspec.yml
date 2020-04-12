@@ -3,10 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - ls -la
       - ./gradlew assembleDebug
-      - ls -la
-      - ls -la app/build/outputs/apk/debug
+      - mv app/build/outputs/apk/debug/app-debug.apk "app/build/outputs/apk/debug/app-`date '+%Y_%m_%d__%H_%M_%S'`.apk"
 artifacts:
   files:
-    - app/build/outputs/apk/debug/app-debug.apk
+    - app/build/outputs/apk/debug/*.apk
